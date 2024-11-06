@@ -6,12 +6,13 @@ BASHWebChat works by taking input from a `HTML` form, then filters it and puts i
 
 ## How to install it
 to install it you need:
-    - GNU sed
-    - any kind of cat command (e.g GNU cat)
-    - GNU BASH
-    - busybox (compiled with httpd that has a -d option)
-    - some form of webserver that supports CGI scripts (here i will be using busybox httpd)
-    - Git (To download the project)
+
+- GNU sed
+- any kind of cat command (e.g GNU cat)
+- GNU BASH
+- busybox (compiled with httpd that has a -d option)
+- some form of webserver that supports CGI scripts (here i will be using busybox httpd)
+- Git (To download the project)
 
 1. install the requirements
     - on arch run:
