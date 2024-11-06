@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			body{
+				background-color:#1a1a1a;
+				color:#FFFFFF;
+			}
+			iframe{
+				width:100%;
+			}
+			textarea{
+				resize:none;
+			}
+			*{
+				font-family:serif;
+			}
+			h1,label,input,textarea,button{
+				transition-duration:250ms;
+				transition-property:background-color,color;
+			}
+			h1:hover,label:hover{
+				color:#e83c3c;
+			}
+			input:hover,textarea:hover,button:hover{
+				background-color:#e83c3c;
+			}
+			button:hover{
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>SEND A MESSAGE</h1>
+		<form action="/cgi-bin/submit.sh" method="POST">
+			<label>YOUR MESSAGE:<br></label>
+			<textarea id="msg" name="msg" rows="4" cols="50" placeholder="HELLO XX_LOVEGAMING_XX" required=""></textarea><br>
+			<label>YOUR USERNAME:</label>
+			<input type="text" id="name" name="name" placeholder="JOHNPIZZAEATER1BILLION" required=""><br>
+			<button type="submit">SEND</button>
+		</form>
+		<br>
+		<iframe src="/cgi-bin/msgs.sh"></iframe>
+	</body>
+</html>
